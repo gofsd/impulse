@@ -1,7 +1,8 @@
-import { MigrationInterface, QueryRunner, getRepository } from "typeorm";
+import {MigrationInterface, QueryRunner, getRepository} from "typeorm";
 import { UsersSeed } from '../seeds/users.seed'
 
-export class SeedUsers1593265498122 implements MigrationInterface {
+
+export class Seeds1593273400110 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         getRepository("users").save(UsersSeed)
