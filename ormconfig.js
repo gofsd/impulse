@@ -1,6 +1,5 @@
 const process = require('process');
 
-console.log(process.env.testVar, 'from console')
 const username = process.env.POSTGRES_USER || "postgres";
 const password = process.env.POSTGRES_PASSWORD || "example";
 
