@@ -6,22 +6,36 @@ class Orders {
   @PrimaryGeneratedColumn()
   public id: number;
 
-  @Column()
+  @Column({
+    type: "bigint",
+  })
   public client: number;
 
-  @Column()
+  @Column({
+    type: "bigint",
+    nullable: true
+  })
   public executor: number;
  
   @Column()
   public address: string;
 
-  @Column()
+  @Column({
+    type: "bigint",
+    nullable: true
+  })
   public restaurant_id: number;
 
-  @Column()
+  @Column({
+    type: "bigint",
+    nullable: true
+  })
   public price: number;
 
-  @Column()
+  @Column({
+    type: "bigint",
+    nullable: true
+  })
   public exec_time: number;
  
 }

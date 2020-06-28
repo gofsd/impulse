@@ -2,6 +2,11 @@ export const UsersSeed = [
     {
       name: "admin",
       email: `test@test.com`,
-      role: 0
+      role: "admin"
+    },
+    {
+        name: "Ivan Ivanov",
+        email: `ivan@test.com`,
+        role: "executor"
     }
   ];

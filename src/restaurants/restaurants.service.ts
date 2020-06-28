@@ -6,7 +6,7 @@ import { Repository } from 'typeorm';
 
 @Injectable()
 export class RestaurantsService extends TypeOrmCrudService<Restaurant>{
-  constructor(@InjectRepository(Restaurant) usersRepository: Repository<Restaurant>){
-    super(usersRepository);
+  constructor(@InjectRepository(Restaurant) restaurantRepository: Repository<Restaurant>){
+    super(restaurantRepository);
   }
 }

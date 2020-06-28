@@ -13,7 +13,7 @@ async function bootstrap() {
   .addTag('impulse')
   .build();
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('', app, document);
 
   await app.listen(3000);
 }

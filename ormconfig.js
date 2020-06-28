@@ -1,5 +1,6 @@
 const process = require('process');
 
+console.log(process.env.testVar, 'from console')
 const username = process.env.POSTGRES_USER || "postgres";
 const password = process.env.POSTGRES_PASSWORD || "example";
 
@@ -13,6 +14,7 @@ module.exports = {
   "synchronize": true,
   "dropSchema": false,
   "logging": true,
+  "keepConnectionAlive": true,
   "entities": [__dirname + "/src/**/*.entity.ts", __dirname + "/dist/**/*.entity.js"],
   "migrations": ["migrations/**/*.ts"],
   "subscribers": ["subscriber/**/*.ts", "dist/subscriber/**/.js"],
